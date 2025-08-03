@@ -62,6 +62,30 @@
       padding: 1rem;
       background: rgba(0, 0, 0, 0.6);
     }
+
+    /* Botón flotante de WhatsApp */
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+    }
+
+    .whatsapp-button:hover {
+      background-color: #1ebe5d;
+    }
   </style>
 </head>
 <body>
@@ -95,5 +119,10 @@
   <footer>
     <p>&copy; 2025 Laboratorio Dental Marcelo</p>
   </footer>
+
+  <!-- Botón de WhatsApp -->
+  <a class="whatsapp-button" href="https://wa.me/595983559813" target="_blank" title="Contactar por WhatsApp">
+    🟢
+  </a>
 </body>
 </html>
