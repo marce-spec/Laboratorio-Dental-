@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Laboratorio Dental</title>
+  <title>Laboratorio Dental Tú Sonrisa</title>
   <meta name="description" content="Prótesis dentales de alta calidad. Laboratorio Dental Marcelo en Paraguay." />
   <meta property="og:title" content="Laboratorio Dental Marcelo" />
   <meta property="og:description" content="Prótesis dentales con precisión y estética. ¡Contáctanos por WhatsApp!" />
@@ -13,26 +13,31 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: url('https://images.unsplash.com/photo-1588776814546-ec7f7f6c6b6e?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
-      background-size: cover;
+      background: #000; /* Fondo negro */
       color: #fff;
     }
 
     header {
       text-align: center;
       padding: 1.5rem;
-      background: rgba(0, 0, 0, 0.6);
+      background: rgba(0, 0, 0, 0.8); /* Fondo oscuro translúcido */
     }
 
     h1 {
       font-size: 1.8rem;
       margin: 0;
-      color: gold;
+      color: #fff; /* Letra blanca */
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin: 0;
+      color: #fff; /* Letra blanca */
     }
 
     .gallery, .videos, .contact {
       padding: 2rem;
-      background: rgba(0, 0, 0, 0.5);
+      background: rgba(0, 0, 0, 0.8); /* Fondo oscuro translúcido */
       margin: 1rem;
       border-radius: 10px;
     }
@@ -95,7 +100,7 @@
     footer {
       text-align: center;
       padding: 1rem;
-      background: rgba(0, 0, 0, 0.6);
+      background: rgba(0, 0, 0, 0.8); /* Fondo oscuro translúcido */
     }
 
     .whatsapp-button {
@@ -116,10 +121,11 @@
 <body>
   <header>
     <h1>Laboratorio Dental</h1>
+    <h2>Tú Sonrisa</h2>
   </header>
 
   <section class="gallery">
-    <h2>Galería de Trabajos</h2>
+    <h2>Galería de Trabajos Dentales</h2>
     <div class="images">
       <img src="https://images.unsplash.com/photo-1606813902914-0c4e1f1e3c4e?auto=format&fit=crop&w=600&q=80" alt="Prótesis dental 1" />
       <img src="https://images.unsplash.com/photo-1588776814546-ec7f7f6c6b6e?auto=format&fit=crop&w=600&q=80" alt="Prótesis dental 2" />
@@ -143,7 +149,7 @@
     <h2>Contacto</h2>
     <form action="https://wa.me/595983559813" method="get" target="_blank">
       <input type="text" name="nombre" placeholder="Tu nombre" required />
-      <input type="text" name="pedido" placeholder="¿Qué necesitas?" required />
+      <input type="text" name="telefono" placeholder="Tu WhatsApp" required />
       <textarea name="mensaje" rows="5" placeholder="Detalles del pedido" required></textarea>
       <button type="submit">Enviar por WhatsApp</button>
     </form>
