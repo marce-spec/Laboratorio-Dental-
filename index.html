@@ -4,7 +4,65 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Laboratorio Dental Marcelo</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://images.unsplash.com/photo-1588776814546-ec7f7f6c6b6e?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .gallery, .videos {
+      padding: 2rem;
+      background: rgba(0, 0, 0, 0.5);
+      margin: 1rem;
+      border-radius: 10px;
+    }
+
+    .images {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .images img {
+      width: 300px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #000;
+    }
+
+    .video-container {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    video {
+      width: 400px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #000;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: rgba(0, 0, 0, 0.6);
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -15,9 +73,9 @@
   <section class="gallery">
     <h2>Galería de Trabajos</h2>
     <div class="images">
-      <img src="assets/images/protesis1.jpg" alt="Prótesis 1" />
-      <img src="assets/images/protesis2.jpg" alt="Prótesis 2" />
-      <img src="assets/images/protesis3.jpg" alt="Prótesis 3" />
+      <img src="https://images.unsplash.com/photo-1588776814546-ec7f7f6c6b6e?auto=format&fit=crop&w=600&q=80" alt="Prótesis 1" />
+      <img src="https://images.unsplash.com/photo-1588776814546-ec7f7f6c6b6e?auto=format&fit=crop&w=600&q=80" alt="Prótesis 2" />
+      <img src="https://images.unsplash.com/photo-1588776814546-ec7f7f6c6b6e?auto=format&fit=crop&w=600&q=80" alt="Prótesis 3" />
     </div>
   </section>
 
@@ -25,11 +83,11 @@
     <h2>Videos de Prótesis</h2>
     <div class="video-container">
       <video controls>
-        <source src="assets/videos/protesis1.mp4" type="video/mp4" />
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
         Tu navegador no soporta el video.
       </video>
       <video controls>
-        <source src="assets/videos/protesis2.mp4" type="video/mp4" />
+        <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4" />
       </video>
     </div>
   </section>
@@ -37,7 +95,5 @@
   <footer>
     <p>&copy; 2025 Laboratorio Dental Marcelo</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
