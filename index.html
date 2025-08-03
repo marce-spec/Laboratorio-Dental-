@@ -13,31 +13,32 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: #000; /* Fondo negro */
+      background: url('https://images.unsplash.com/photo-1588776814546-ec7f7f6c6b6e?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background-size: cover;
       color: #fff;
     }
 
     header {
       text-align: center;
       padding: 1.5rem;
-      background: rgba(0, 0, 0, 0.8); /* Fondo oscuro translúcido */
+      background: rgba(0, 0, 0, 0.6);
     }
 
     h1 {
       font-size: 1.8rem;
       margin: 0;
-      color: #fff; /* Letra blanca */
+      color: #fff;
     }
 
     h2 {
       font-size: 1.5rem;
       margin: 0;
-      color: #fff; /* Letra blanca */
+      color: #fff;
     }
 
     .gallery, .videos, .contact {
       padding: 2rem;
-      background: rgba(0, 0, 0, 0.8); /* Fondo oscuro translúcido */
+      background: rgba(0, 0, 0, 0.5);
       margin: 1rem;
       border-radius: 10px;
     }
@@ -100,7 +101,7 @@
     footer {
       text-align: center;
       padding: 1rem;
-      background: rgba(0, 0, 0, 0.8); /* Fondo oscuro translúcido */
+      background: rgba(0, 0, 0, 0.6);
     }
 
     .whatsapp-button {
@@ -147,12 +148,22 @@
 
   <section class="contact">
     <h2>Contacto</h2>
-    <form action="https://wa.me/595983559813" method="get" target="_blank">
+    <form id="contactForm" action="https://wa.me/595983559813" method="get" target="_blank">
       <input type="text" name="nombre" placeholder="Tu nombre" required />
       <input type="text" name="telefono" placeholder="Tu WhatsApp" required />
       <textarea name="mensaje" rows="5" placeholder="Detalles del pedido" required></textarea>
       <button type="submit">Enviar por WhatsApp</button>
     </form>
+    <script>
+      document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const nombre = document.querySelector('input[name="nombre"]').value;
+        const telefono = document.querySelector('input[name="telefono"]').value;
+        const mensaje = document.querySelector('textarea[name="mensaje"]').value;
+        const url = `https://wa.me/595983559813?text=Nombre:%20${nombre}%0ATeléfono:%20${telefono}%0AMensaje:%20${encodeURIComponent(mensaje)}`;
+        window.open(url, '_blank');
+      });
+    </script>
   </section>
 
   <footer>
