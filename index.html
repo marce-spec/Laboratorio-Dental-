@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Laboratorio Dental Marcelo</title>
+  <title>Laboratorio Dental</title>
   <meta name="description" content="Prótesis dentales de alta calidad. Laboratorio Dental Marcelo en Paraguay." />
   <meta property="og:title" content="Laboratorio Dental Marcelo" />
-  <meta property="og:description" content="Prótesis dentales con precisión y estética. ¡Contáctanos!" />
+  <meta property="og:description" content="Prótesis dentales con precisión y estética. ¡Contáctanos por WhatsApp!" />
   <meta property="og:image" content="https://images.unsplash.com/photo-1588776814546-ec7f7f6c6b6e?auto=format&fit=crop&w=1200&q=80" />
   <meta property="og:url" content="https://tusitio.netlify.app" />
   <style>
@@ -33,9 +33,15 @@
     h1 {
       font-size: 2.5rem;
       margin-bottom: 0.5rem;
+      color: gold;
     }
 
-    .gallery, .videos, .contact {
+    p.subtitulo {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    .gallery, .videos {
       padding: 2rem;
       background: rgba(0, 0, 0, 0.5);
       margin: 1rem;
@@ -78,66 +84,29 @@
       position: fixed;
       bottom: 20px;
       right: 20px;
-      background-color: #25D366;
-      color: white;
-      border-radius: 50%;
+      z-index: 1000;
+    }
+
+    .whatsapp-button img {
       width: 60px;
       height: 60px;
-      font-size: 30px;
+      border-radius: 50%;
       box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-      z-index: 1000;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-    }
-
-    .whatsapp-button:hover {
-      background-color: #1ebe5d;
-    }
-
-    .contact form {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      max-width: 500px;
-      margin: auto;
-    }
-
-    .contact input, .contact textarea {
-      padding: 0.8rem;
-      border: none;
-      border-radius: 5px;
-      font-size: 1rem;
-    }
-
-    .contact button {
-      padding: 0.8rem;
-      background-color: #25D366;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      font-size: 1rem;
-      cursor: pointer;
-    }
-
-    .contact button:hover {
-      background-color: #1ebe5d;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Laboratorio Dental Marcelo</h1>
-    <p>Prótesis dentales con precisión y estética</p>
+    <h1>Laboratorio Dental</h1>
+    <p class="subtitulo">Tu sonrisa</p>
   </header>
 
   <section class="gallery">
     <h2>Galería de Trabajos</h2>
     <div class="images">
-      <img src="https://images.unsplash.com/photo-1588776814546-ec7f7f6c6b6e?auto=format&fit=crop&w=600&q=80" alt="Prótesis 1" />
-      <img src="https://images.unsplash.com/photo-1588776814546-ec7f7f6c6b6e?auto=format&fit=crop&w=600&q=80" alt="Prótesis 2" />
-      <img src="https://images.unsplash.com/photo-1588776814546-ec7f7f6c6b6e?auto=format&fit=crop&w=600&q=80" alt="Prótesis 3" />
+      <img src="https://images.unsplash.com/photo-1606813902914-0c4e1f1e3c4e?auto=format&fit=crop&w=600&q=80" alt="Prótesis dental 1" />
+      <img src="https://images.unsplash.com/photo-1588776814546-ec7f7f6c6b6e?auto=format&fit=crop&w=600&q=80" alt="Prótesis dental 2" />
+      <img src="https://images.unsplash.com/photo-1588776814546-ec7f7f6c6b6e?auto=format&fit=crop&w=600&q=80" alt="Prótesis dental 3" />
     </div>
   </section>
 
@@ -153,23 +122,13 @@
     </div>
   </section>
 
-  <section class="contact">
-    <h2>Contacto</h2>
-    <form action="https://formsubmit.co/tuemail@example.com" method="POST">
-      <input type="text" name="nombre" placeholder="Tu nombre" required />
-      <input type="email" name="email" placeholder="Tu correo" required />
-      <textarea name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
-      <button type="submit">Enviar mensaje</button>
-    </form>
-    <p style="text-align:center; margin-top:1rem;">O contáctame directamente por WhatsApp 👇</p>
-  </section>
-
   <footer>
     <p>&copy; 2025 Laboratorio Dental Marcelo</p>
   </footer>
 
+  <!-- Botón flotante de WhatsApp con ícono -->
   <a class="whatsapp-button" href="https://wa.me/595983559813" target="_blank" title="Contactar por WhatsApp">
-    🟢
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
   </a>
 </body>
 </html>
